@@ -1,0 +1,17 @@
+<div class="col-md-4 col-md-offset-4">
+  <h2>New post</h2>
+
+  <%= form_for :post, url: posts_path do |f| %>
+    Title
+    <br>
+    <%= f.text_field :title %>
+
+    <br>
+    Description
+    <br>
+    <%= f.text_area :body %>
+    <br>
+
+    <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+  <% end %>
+</div>
