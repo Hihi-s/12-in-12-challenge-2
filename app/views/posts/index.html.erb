@@ -1,1 +1,6 @@
-<h1>index.html.erb</h1>
+<% @posts.each do |post| %>
+  <div class="post_wrapper">
+    <h2 class="title"><%= link_to post.title, post %></h2>
+    <p class="data"><%= post.created_at.strftime("%B, %d, %y") %></p>
+  </div>
+<% end %>
