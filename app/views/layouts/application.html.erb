@@ -43,7 +43,7 @@
         </div>
       </div>
     
-    <%= flash.each do |msg,name| %>
+    <% flash.each do |name, msg| %>
       <%= content_tag(:div, msg, class: "alert") %>
     <% end %>
 
