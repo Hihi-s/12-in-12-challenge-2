@@ -1,4 +1,4 @@
-<div class="col-md-4 col-md-offset-4">
+<div id="page_wrapper">
   <h2>New post</h2>
 
   <%= form_for :post, url: posts_path do |f| %>
@@ -11,7 +11,7 @@
     <br>
     <%= f.text_area :body %>
     <br>
-
-    <%= f.submit "Submit", :disable_with => 'Submiting...' %>
+    <br>
+    <%= f.submit "Save Post", :disable_with => 'Submiting...' %>
   <% end %>
 </div>
